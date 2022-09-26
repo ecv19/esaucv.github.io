@@ -3,9 +3,9 @@
 esaucv.github.io
 
 
-Base/idea theme [[https://hugo-coder.netlify.app/]]
-
-
+### Theme ideas
+Hugo-coder [https://hugo-coder.netlify.app/]
+Knaaptime [https://knaaptime.com/]
 
 
 
