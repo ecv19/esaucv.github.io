@@ -4,8 +4,8 @@ esaucv.github.io
 
 
 ### Theme ideas
-Hugo-coder [https://hugo-coder.netlify.app/]
-Knaaptime [https://knaaptime.com/]
+- Hugo-coder [https://hugo-coder.netlify.app/]
+- Knaaptime [https://knaaptime.com/]
 
 
 
