@@ -1,0 +1,11 @@
+---
+header:
+  - label: About
+    link: "about"
+  - label: Projects
+    link: "projects"
+  - label: Papers/Publications
+    link: "papers-publications"
+  - label: CV
+    link: ""
+    download: true
