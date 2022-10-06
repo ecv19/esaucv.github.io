@@ -16,7 +16,7 @@ params:
   description: "Ph.D. student at UC Santa Barbara's Department of Geography"
   author: "Esau Casimiro-Vieyra"
   meta:
-    theme: "#212121"
+    theme: "#42a5f5"
 
 security:
   enableInlineShortcodes: false
