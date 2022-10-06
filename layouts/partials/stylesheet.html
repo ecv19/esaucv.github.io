@@ -1,0 +1,11 @@
+{{ $reset := resources.Get "css/reset.css" }}
+{{ $fonts := resources.Get "css/fonts.css" | resources.ExecuteAsTemplate "fonts.css" . }}
+{{ $critical := resources.Get "css/critical.css" }}
+{{ $stylesBundle := slice $reset $fonts $critical | resources.Concat "css/styles.css" | postCSS | resources.Minify }}
+{{ $rawCSS := $stylesBundle.Content | safeCSS }}
+<style>{{ $rawCSS }}</style>
+
+{{ $tw := resources.Get "css/tw.css" }}
+{{ $custom := resources.Get "css/custom.css" }}
+{{ $main := slice $tw $custom | resources.Concat "css/main.css" | postCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $main.Permalink }}" />
