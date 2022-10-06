@@ -1,0 +1,31 @@
+<footer class="grid w-full">
+  <section
+    class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
+  >
+    <ul
+      class="auto-cols-auto gap-x-1 grid grid-rows-1 items-center list-none my-2 p-0 xxs:gap-x-3"
+    >
+      <li class="m-0 row-start-1">
+        <p class="m-0 text-sm">
+          &copy; {{ time.Now.Format "2006" }} {{ .Site.Title }}
+        </p>
+      </li>
+      <li class="m-0 row-start-1">
+        <p class="m-0 text-meta text-sm" aria-hidden="true">&bull;</p>
+      </li>
+      <li class="m-0 row-start-1">
+        <p class="m-0 text-meta text-sm" aria-hidden="true">
+          Powered by
+          <a
+            class="ml-1 no-underline text-sm"
+            href="https://github.com/fourjuaneight/blog"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hugo
+          </a>
+        </p>
+      </li>
+    </ul>
+  </section>
+</footer>
