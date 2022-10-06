@@ -1,0 +1,48 @@
+---
+baseURL: https://esaucv.github.io
+title: Esau Casimiro-Vieyra
+# content
+languageCode: en-us
+enableRobotsTXT: true
+publishdir: dist
+metaDataFormat: yaml
+disableKinds: ["taxonomyTerm"]
+footnoteReturnLinkContents: ↩
+summarylength: 40
+enableEmoji: true
+canonifyURLs: true
+
+params:
+  description: "Ph.D. student at UC Santa Barbara's Department of Geography"
+  author: "Esau Casimiro-Vieyra"
+  meta:
+    theme: "#212121"
+
+security:
+  enableInlineShortcodes: false
+  exec:
+    allow: ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^babel$"]
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    style: dracula
+    tabWidth: 2
+
+taxonomies:
+  tags: "tags"
+
+permalinks:
+  section: "/:filename/"
+  tags: "/tags/:slug/"
+
+outputs:
+  home: ["html"]
+  page: ["html"]
+  section: ["html", "rss"]
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
