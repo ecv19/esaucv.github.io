@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html
+  lang='{{ $.Site.Language | default "en-US" }}'
+  data-type="{{ .Type }}"
+  data-kind="{{ .Kind }}"
+>
+  {{ block "head" . }}
+    <head>
+      <base href="{{ .Permalink }}" />
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      {{ hugo.Generator }}
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta
+        name="viewport"
+        content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"
+      />
+      <title>
+        {{ if .IsHome }}
+          {{ .Site.Title }}
+        {{ else }}
+          {{ .Title }} | {{ .Site.Title }}
+        {{ end }}
+      </title>
+      <link rel="canonical" href="{{ .Permalink }}" />
+      {{ partial "opengraph.html" . }}
+      {{ partial "favicons.html" . }}
+      {{ partial "fonts.html" . }}
+      {{ partial "stylesheet.html" . }}
+      {{ partial "fonts-loading.html" . }}
+    </head>
+  {{ end }}
+
+
+  <body>
+    {{ partial "header.html" . }}
+
+
+    <main class="auto-rows-min grid relative w-full">
+      <div
+        class="col-start-2 flex flex-col items-start justify-start relative row-start-2 w-full"
+      >
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    {{ if hugo.Environment | eq "production" }}
+      {{ partial "sw.html" . }}
+    {{ end }}
+
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
