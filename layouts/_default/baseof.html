@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html
   lang='{{ $.Site.Language | default "en-US" }}'
-  data-type="{{ .Type }}"
   data-kind="{{ .Kind }}"
 >
   {{ block "head" . }}
@@ -37,7 +36,10 @@
   <body data-home="{{ .IsHome }}">
     {{ partial "header.html" . }}
 
-    <main class="auto-rows-min {{ if .IsHome }}bg-clear {{ end }}grid relative w-full">
+    <main
+      class="auto-rows-min {{ if .IsHome }}bg-clear {{ end }}grid relative w-full"
+      data-type="{{ .Type }}"
+    >
       <div
         class="col-start-2 flex flex-col items-start justify-start relative row-start-2 w-full"
       >
