@@ -2,7 +2,7 @@
 <section class="py-6 sm:py-10 w-full">
   <h1 class="md:text-6xl mx-auto text-4xl text-center w-full">{{ .Title }}</h1>
   <div class="w-full">{{ .Content }}</div>
-  <div id="feed" class="grid w-full">
+  <div id="feed" class="grid mt-8 w-full">
     {{ range (.Paginate ( last 10 .Pages.ByDate )).Pages }}
       {{ .Render "li"}}
     {{ end }}
