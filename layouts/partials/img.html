@@ -25,7 +25,7 @@
 {{ else }}
 {{ $imgPrimary := resources.Get (print "/img/" $img) }}
 <picture
-  class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}"
+  class="img-wrap flex items-center justify-center{{ with .pClasses }} {{ . }}{{ else }} my-4 w-full{{ end }}"
   {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
 >
   {{ $webpPrimary := $imgPrimary.Resize (print .size "x webp drawing") }}

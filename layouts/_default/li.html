@@ -1,7 +1,10 @@
 <article
-  class="summary border-0 border-b border-solid flex flex-col items-start justify-start overflow-hidden pb-4 relative w-full"
+  class="summary flex flex-col items-start justify-start overflow-hidden pb-4 relative w-full"
 >
-  <h2 class="mr-auto">
+  {{ with .Params.img }}
+    {{ partial "img.html" (dict "src" . "alt" "" "size" "310" "pClasses" "bg-foreground h-36 w-full" "iClasses" "object-center") }}
+  {{ end }}
+  <h2 class="mr-auto pt-4">
     <a
       class="focus:underline hover:underline no-underline"
       href="{{ .Permalink }}"
