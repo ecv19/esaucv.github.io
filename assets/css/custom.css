@@ -185,19 +185,36 @@ footer ul {
   padding: 0;
 }
 
+header {
+  z-index: 100;
+}
+
+header[data-active='false'] {
+  transition-delay: 0ms;
+}
+
+header[data-active='true'] {
+  transition-delay: 200ms;
+}
+
+header[data-active='true'],
+header nav#menu[data-active='true'] {
+  background-color: var(--background);
+}
+
 header nav#menu {
-  transition-delay: 200ms, 0ms;
   transition-property: opacity, transform;
+  z-index: 90;
 }
 
 header nav#menu[data-active='false'] {
-  transform: translateY(-100vh);
+  transform: translateY(-12.25rem);
 }
 
 header nav#menu[data-active='true'] {
   opacity: 1;
+  transition-delay: 0ms, 200ms, 0ms;
   transform: translateY(2.75rem);
-  z-index: 100;
 }
 
 @media screen and (min-width: 640px) {

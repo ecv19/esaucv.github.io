@@ -1,4 +1,7 @@
-<header class="{{ if .IsHome }}bg-clear {{ end }}grid relative w-full">
+<header
+  class="{{ if .IsHome }}bg-clear {{ end }}duration-300 ease-in-out grid relative transition-colors w-full"
+  data-active="false"
+>
   <section
     class="col-start-2 flex items-center justify-between row-start-2 w-full"
   >
