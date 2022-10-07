@@ -1,10 +1,10 @@
 :root {
   --background: #212121;
-  --foreground: #dadada;
-  --meta: #595959;
+  --foreground: #f4f4f4;
+  --meta: #888888;
   --primary: #42a5f5;
+  --clear: rgba(0, 0, 0, 0.75);
   --selection: #eaf0fe;
-  --transparent: rgba(0, 0, 0, 0);
   --duration: 250ms;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
 }
@@ -58,18 +58,14 @@ header {
   grid-template-rows: minmax(0.5rem, 1fr) min-content minmax(0.5rem, 1fr);
 }
 
-header > section > nav {
-  padding-top: 0.45rem;
-}
-
 main {
   grid-template-rows: 0.5rem auto 0.5rem;
-  min-height: calc(100vh - 11rem);
+  min-height: calc(100vh - 7rem);
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 640px) {
   main {
-    min-height: calc(100vh - 10rem);
+    min-height: calc(100vh - 6.90625rem);
   }
 }
 
