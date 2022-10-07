@@ -1,6 +1,6 @@
 ---
 baseURL: https://esaucv.github.io
-title: Esau Casimiro-Vieyra
+title: Esaú Casimiro-Vieyra
 # content
 languageCode: en-us
 enableRobotsTXT: true
@@ -13,8 +13,8 @@ enableEmoji: true
 canonifyURLs: true
 
 params:
-  description: "Ph.D. student at UC Santa Barbara's Department of Geography"
-  author: "Esau Casimiro-Vieyra"
+  description: "Ph.D. student in Geography at the University of California, Santa Barbara"
+  author: "Esaú Casimiro-Vieyra"
   meta:
     theme: "#42a5f5"
 
