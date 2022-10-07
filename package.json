@@ -12,7 +12,7 @@
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
     "serve": "serve dist",
-    "start": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo --disableFastRender --gc --ignoreCache --log --minify serve\" \"npm run tw -- --watch\"",
+    "start": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo --disableFastRender --gc --debug --log --minify serve\" \"npm run tw -- --watch\"",
     "tw": "tailwindcss --no-autoprefixer -i ./assets/css/tailwind.css -o ./assets/css/tw.css",
     "prepare": "husky install"
   },
