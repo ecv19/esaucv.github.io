@@ -37,7 +37,7 @@
   <body data-home="{{ .IsHome }}">
     {{ partial "header.html" . }}
 
-    <main class="auto-rows-min bg-clear grid relative w-full">
+    <main class="auto-rows-min {{ if .IsHome }}bg-clear {{ end }}grid relative w-full">
       <div
         class="col-start-2 flex flex-col items-start justify-start relative row-start-2 w-full"
       >
