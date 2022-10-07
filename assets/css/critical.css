@@ -22,7 +22,7 @@
 }
 
 html,
-body {
+body[data-home="false"] {
   background-color: var(--background);
 }
 

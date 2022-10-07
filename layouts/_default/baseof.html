@@ -34,12 +34,10 @@
     </head>
   {{ end }}
 
-
-  <body>
+  <body data-home="{{ .IsHome }}">
     {{ partial "header.html" . }}
 
-
-    <main class="auto-rows-min grid relative w-full">
+    <main class="auto-rows-min bg-clear grid relative w-full">
       <div
         class="col-start-2 flex flex-col items-start justify-start relative row-start-2 w-full"
       >
@@ -48,6 +46,10 @@
     </main>
 
     {{ partial "footer.html" . }}
+
+    {{ if .IsHome }}
+      {{ partial "background.html" . }}
+    {{ end }}
 
     {{ if hugo.Environment | eq "production" }}
       {{ partial "sw.html" . }}
