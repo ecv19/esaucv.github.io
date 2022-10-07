@@ -4,9 +4,9 @@
   "description": "esaucv.github.io",
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "npm run tw && hugo -e production --gc --minify",
+    "build": "npm run tw && hugo -e production --gc --minify",
     "build:fallback": "npm run build:prod || npm run build:prod",
-    "build": "hugo --debug -e local --gc --log --minify -v --verboseLog",
+    "build:local": "hugo --debug -e local --gc --log --minify -v --verboseLog",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
