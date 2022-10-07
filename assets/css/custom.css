@@ -191,16 +191,29 @@ footer ul {
   padding: 0;
 }
 
-header {
-  --nav-width: 14.75625rem;
+header nav#menu {
+  transition-delay: 200ms, 0ms;
+  transition-property: opacity, transform;
 }
 
-header nav {
-  max-width: var(--nav-width);
+header nav#menu[data-active='false'] {
+  transform: translateY(-100vh);
 }
 
-header nav > ul {
-  min-width: var(--nav-width);
+header nav#menu[data-active='true'] {
+  opacity: 1;
+  transform: translateY(2.75rem);
+  z-index: 100;
+}
+
+@media screen and (min-width: 640px) {
+  header nav#menu {
+    max-width: 21rem;
+    left: unset !important;
+    right: unset !important;
+    top: unset !important;
+    transform: unset !important;
+  }
 }
 
 article ol,
@@ -217,11 +230,6 @@ li code {
 
 footer p {
   line-height: 1.25 !important;
-}
-
-a.site-name {
-  color: var(--primary);
-  font-weight: bold;
 }
 
 /* Footnotes */
@@ -258,7 +266,6 @@ section.footnotes a,
 sup a {
   text-decoration: none !important;
 }
-
 
 /* Diagrams */
 div.highlight,

@@ -5,6 +5,20 @@
 {{ $rawCSS := $stylesBundle.Content | safeCSS }}
 <style>{{ $rawCSS }}</style>
 
+{{ if eq .IsHome false }}
+<style>
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background: #f4f4f4;
+      --foreground: #212121;
+      --meta: #595959;
+      --primary: #3e71a9;
+      --clear: rgba(0, 0, 0, 0);
+    }
+  }
+</style>
+{{ end }}
+
 {{ $tw := resources.Get "css/tw.css" }}
 {{ $custom := resources.Get "css/custom.css" }}
 {{ $main := slice $tw $custom | resources.Concat "css/main.css" | postCSS | resources.Minify }}
