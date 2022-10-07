@@ -1,2 +1,27 @@
 {{ define "main" }}
+<section
+  class="flex flex-col h-auto items-center justify-center m-auto sm:max-w-3xl w-full"
+>
+  <h1 class="mb-6 p-0 sm:mb-4 text-center w-full">{{ .Site.Title }}</h1>
+  <h2 class="mb-6 p-0 sm:mb-2 text-center w-full">{{ .Site.Params.description }}</h2>
+  <ul
+    class="flex flex-wrap items-center justify-center list-none m-0 p-0 w-full"
+  >
+    {{ range .Site.Data.social.links }}
+    <li class="flex h-7 items-center justify-center m-3 p-0 sm:m-4 w-7">
+      {{ $icon := lower (replaceRE "\\s" "-" .label) }}
+      {{ $iconPath := print "icons/" $icon ".html" }}
+      <a
+        class="focus:no-underline h-7 hover:no-underline no-underline w-7"
+        href="{{ .link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ partial $iconPath . }}
+        <span class="sr-only">{{ .label }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}
