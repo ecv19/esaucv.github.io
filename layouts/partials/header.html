@@ -1,5 +1,5 @@
 <header
-  class="{{ if .IsHome }}bg-clear {{ end }}duration-300 ease-in-out grid relative transition-colors w-full"
+  class="{{ if .IsHome }}bg-clear {{ end }}duration-300 ease-in-out grid relative{{ if eq .IsHome false }} shadow-md{{ end }} transition-colors w-full"
   data-active="false"
 >
   <section
