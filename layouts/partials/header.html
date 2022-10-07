@@ -16,7 +16,7 @@
       id="menu-toggle"
       class="bg-transparent border-none flex focus:bg-transparent h-7 hover:bg-transparent items-center justify-center m-0 p-0 outline-none sm:hidden w-7"
     >
-      {{ partial "menu.html" . }}
+      {{ partial "icons/menu.html" . }}
       <span class="sr-only">Toggle Menu</span>
     </button>
     <nav
@@ -27,18 +27,18 @@
       <ul
         class="auto-rows-min gap-y-3 grid msm:grid-cols-1 items-center list-none m-0 max-w-full p-0 sm:auto-cols-min sm:gap-x-2 sm:grid-rows-1 xxs:gap-x-3"
       >
-        {{ range .Site.Data.nav.header }} {{ $href := cond (eq .download true)
-        .link (.link | absURL) }}
-        <li
-          class="flex items-end justify-center m-0 sm:justify-start sm:row-start-1"
-        >
-          <a
-            class="focus:underline hover:underline no-underline text-lg xs:leading-tight"
-            href="{{ $href }}"
+        {{ range .Site.Data.nav.header }}
+          {{ $href := cond (eq .download true) .link (.link | absURL) }}
+          <li
+            class="flex items-end justify-center m-0 sm:justify-start sm:row-start-1"
           >
-            {{ .label }}
-          </a>
-        </li>
+            <a
+              class="focus:underline hover:underline no-underline text-lg xs:leading-tight"
+              href="{{ $href }}"
+            >
+              {{ .label }}
+            </a>
+          </li>
         {{ end }}
       </ul>
     </nav>

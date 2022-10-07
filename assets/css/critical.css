@@ -10,11 +10,11 @@
 }
 
 ::-moz-selection {
-  background-color: var(--selection);
+  background-color: var(--meta);
 }
 
 ::selection {
-  background-color: var(--selection);
+  background-color: var(--meta);
 }
 
 *:focus {
