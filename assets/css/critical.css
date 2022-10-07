@@ -21,11 +21,6 @@
   outline-color: var(--primary);
 }
 
-html,
-body[data-home="false"] {
-  background-color: var(--background);
-}
-
 html {
   box-sizing: border-box;
   font-feature-settings: 'liga' 1;
@@ -43,6 +38,10 @@ body {
   overflow-x: hidden;
   padding: 0;
   position: relative;
+}
+
+body[data-home="false"] {
+  background-color: var(--background);
 }
 
 header,
