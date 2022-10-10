@@ -4,7 +4,7 @@
   --meta: #888888;
   --meta-light: rgba(144, 144, 144, 0.15);
   --primary: #42a5f5;
-  --clear: rgba(0, 0, 0, 0.75);
+  --clear: rgba(0, 0, 0, 0.5);
   --selection: #eaf0fe;
   --duration: 250ms;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
