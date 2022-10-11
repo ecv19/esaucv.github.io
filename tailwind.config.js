@@ -36,6 +36,9 @@ module.exports = {
         vh: '100vh',
         vw: '100vw',
       },
+      width: {
+        screen: '100vw'
+      }
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
