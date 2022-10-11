@@ -1,0 +1,39 @@
+<article
+  class="summary flex flex-col items-start justify-start overflow-hidden pb-4 relative w-full"
+>
+  {{ with .img }}
+    {{ partial "img.html" (dict "src" . "alt" "" "size" "310" "pClasses" "bg-white h-36 w-full" "iClasses" "object-center") }}
+  {{ end }}
+  <h2 class="mr-auto pt-4">{{ .name }}</h2>
+  <p>{{ .description }}</p>
+  {{ with .sources }}
+    <ul class="flex items-center justify-start list-none p-0">
+      {{ range $key, $item := . }}
+        <li class="ml-0 my-0 mr-2 p-0">
+          <a
+            class="border border-meta border-solid duration-300 ease-in-out focus:border-primary focus:no-underline focus:text-primary hover:border-primary hover:no-underline hover:text-primary m-0 no-underline px-2 py-1 rounded text-primary transition-colors uppercase whitespace-nowrap"
+            href="{{ $item.link }}"
+            {{ if ne $item.type "pdf" }}
+            target="_blank"
+            rel="noopener noreferrer"
+            {{ else }}
+            download
+            {{ end }}
+          >
+            {{ $item.type }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ with .link }}
+    <a
+      class="bg-primary border border-primary border-solid capitalize cursor-pointer duration-300 ease-in-out focus:bg-white focus:no-underline hover:bg-white hover:no-underline m-0 no-underline outline-none px-3 py-2 rounded text-center text-white transition-colors w-full whitespace-nowrap"
+      href="{{ . }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+     View Project
+    </a>
+  {{ end }}
+</article>

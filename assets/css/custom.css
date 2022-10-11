@@ -4,6 +4,7 @@ a:visited,
 a:focus,
 a:hover {
   color: var(--foreground);
+  outline: none;
 }
 
 a,

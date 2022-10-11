@@ -3,8 +3,8 @@
   <h1 class="md:text-6xl mx-auto text-4xl text-center w-full">{{ .Title }}</h1>
   <div class="w-full">{{ .Content }}</div>
   <div id="feed" class="grid mt-8 w-full">
-    {{ range (.Paginate ( last 10 .Pages.ByDate )).Pages }}
-      {{ .Render "li"}}
+    {{ range .Site.Data.content.papers }}
+      {{ partial "li.html" (dict "name" .name "description" .description "sources" .sources) }}
     {{ end }}
   </div>
 </section>
