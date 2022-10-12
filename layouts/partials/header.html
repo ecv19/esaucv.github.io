@@ -35,6 +35,9 @@
             <a
               class="focus:underline hover:underline no-underline text-lg xs:leading-tight"
               href="{{ $href }}"
+              {{ if .download }}
+              target="_blank"
+              {{ end }}
             >
               {{ .label }}
             </a>

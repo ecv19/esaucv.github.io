@@ -14,11 +14,9 @@
             class="border border-meta border-solid duration-300 ease-in-out focus:border-primary focus:no-underline focus:text-primary hover:border-primary hover:no-underline hover:text-primary m-0 no-underline px-2 py-1 rounded text-primary transition-colors uppercase whitespace-nowrap"
             href="{{ $item.link }}"
             {{ if ne $item.type "pdf" }}
-            target="_blank"
             rel="noopener noreferrer"
-            {{ else }}
-            download
             {{ end }}
+            target="_blank"
           >
             {{ $item.type }}
           </a>
