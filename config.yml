@@ -1,10 +1,9 @@
 ---
-baseURL: https://ecv19.github.io
+baseURL: https://ecv19.github.io/
 title: Esaú Casimiro-Vieyra
 # content
 languageCode: en-us
 enableRobotsTXT: true
-publishdir: dist
 metaDataFormat: yaml
 disableKinds: ["taxonomyTerm"]
 footnoteReturnLinkContents: ↩

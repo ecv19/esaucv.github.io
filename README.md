@@ -1,6 +1,6 @@
 # Repo for Academic page
 
-esaucv.github.io
+ecv19.github.io
 
 ### Theme ideas
 - Hugo-coder [https://hugo-coder.netlify.app/]
