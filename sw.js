@@ -138,7 +138,7 @@
     const { request } = event;
     const url = new URL(request.url);
 
-    if (url.href.indexOf('https://esaucv.github.io') !== 0) {
+    if (url.href.indexOf('https://ecv19.github.io') !== 0) {
       return;
     }
 
