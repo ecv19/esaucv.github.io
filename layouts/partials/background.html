@@ -1,9 +1,5 @@
 {{ $background := resources.Get "/img/background.svg" }}
-<img
-  src="{{ $background.Permalink }}"
-  alt=""
-  class="absolute h-screen inset-y-0 max-w-max w-auto 2xl:h-auto 2xl:max-h-screen 2xl:w-screen z-hidden"
-  width="100"
-  aria-hidden="true"
-  loading="lazy"
-/>
+<div
+  class="absolute bg-center bg-cover bg-no-repeat h-screen inset-0 w-screen z-hidden"
+  style="background-image: url({{ $background.Permalink }});"
+></div>
