@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://esaucv.github.io/sitemap.xml
+Host: https://esaucv.github.io
