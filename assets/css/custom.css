@@ -10,7 +10,7 @@ a:hover {
 a,
 a:visited {
   text-decoration: underline;
-  text-decoration-color: var(--primary);
+  text-decoration-color: #ef741d;
 }
 
 a:focus,
@@ -75,7 +75,7 @@ blockquote {
 }
 
 button {
-  background-color: var(--primary);
+  background-color: #8ad3e3 ;
   border: none;
   color: var(--background);
   cursor: pointer;
