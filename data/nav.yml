@@ -4,7 +4,7 @@ header:
     link: "about"
   - label: Projects
     link: "projects"
-  - label: Papers/Publications
+  - label: Publications
     link: "papers-publications"
   - label: CV
     link: "/pdfs/cv.pdf"

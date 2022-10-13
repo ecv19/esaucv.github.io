@@ -4,7 +4,7 @@
   {{ with .img }}
     {{ partial "img.html" (dict "src" . "alt" "" "size" "310" "pClasses" "bg-white h-36 w-full" "iClasses" "object-center") }}
   {{ end }}
-  <h2 class="mr-auto pt-4">{{ .name }}</h2>
+  <h3 class="mr-auto pt-4">{{ .name }}</h3>  <!-- size of the paper title -->
   <p>{{ .description }}</p>
   {{ with .sources }}
     <ul class="flex items-center justify-start list-none p-0">
