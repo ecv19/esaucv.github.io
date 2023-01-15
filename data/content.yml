@@ -1,12 +1,12 @@
 ---
 projects:
   - name: Sanctuary City Database
-    description: A sanctuary jurisdiction database of official/incorporated cities and counties in the State of California to examine sanctuary city policy effects on health. Funded by the UC Mexico United States Institute. 
+    description: A sanctuary jurisdiction database of cities and counties in the State of California to examine sanctuary policies effects on health. Funded by the UC Mexico United States Institute. 
     link: "https://github.com/ecv19?tab=repositories"
     img: ca.png
 
 papers:
-  - name: Inequality and place mobility in Mexico 2000-2015.  Applied Geography. Invited Revision.
+  - name: Inequality and place mobility in Mexico 2000-2015.  Applied Geography. In press.
     description: Rey, S.J., Casimiro Vieyra, Esaú
     sources:
   - name: Immigrants in California - A Study on Latinxs' Perception on Immigrant Integration. Under Review
