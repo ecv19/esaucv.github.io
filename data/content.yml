@@ -6,12 +6,15 @@ projects:
     img: ca.png
 
 papers:
-  - name: Inequality and place mobility in Mexico 2000-2015.  Applied Geography. In press.
+  - name: "Rey, S. J., & Casimiro Vieyra, E. (2023). Spatial inequality and place mobility in Mexico: 2000–2015. Applied Geography, 152, 102871. 
+  https://doi.org/10.1016/j.apgeog.2023.102871"
     description: Rey, S.J., Casimiro Vieyra, Esaú
-    sources:
+    sources: 
+    - type: url
+      link: "https://doi.org/10.1016/j.apgeog.2023.102871"
   - name: Immigrants in California - A Study on Latinxs' Perception on Immigrant Integration. Under Review
     description: Casimiro Vieyra, Esaú, Deniz-Zaragoza, Mirella, Ayón, Cecilia
-    sources:
+    sources: 
   - name: Latinx Immigrant Health - Does immigrants’ perceptions of integration protect their health?. In progess
     description: Deniz-Zaragoza, Mirella, Casimiro Vieyra, Esaú, Ayón, Cecilia
     sources:
