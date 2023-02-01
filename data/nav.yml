@@ -7,5 +7,5 @@ header:
   - label: Publications
     link: "papers-publications"
   - label: CV
-    link: "/pdfs/CV.pdf"
+    link: "/pdfs/cv.pdf"
     download: true
