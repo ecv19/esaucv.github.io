@@ -1,6 +1,7 @@
 <header
   class="{{ if .IsHome }}bg-clear {{ end }}duration-300 ease-in-out grid relative{{ if eq .IsHome false }} shadow-md{{ end }} transition-colors w-full"
   data-active="false"
+  style="background-color: #000000;"
 >
   <section
     class="col-start-2 flex items-center justify-between row-start-2 w-full"
@@ -15,6 +16,8 @@
       type="button"
       id="menu-toggle"
       class="bg-transparent border-none flex focus:bg-transparent h-7 hover:bg-transparent items-center justify-center m-0 p-0 outline-none sm:hidden w-7"
+
+
     >
       {{ partial "icons/menu.html" . }}
       <span class="sr-only">Toggle Menu</span>
@@ -23,6 +26,8 @@
       id="menu"
       class="absolute border-0 border-y border-solid border-meta duration-300 ease-in-out left-0 opacity-0 overflow-x-auto overflow-y-auto py-3 right-0 sm:border-none sm:opacity-100 sm:pb-0 sm:pt-1 sm:px-0 sm:relative top-0 w-full xxxs:overflow-hidden"
       data-active="false"
+     
+
     >
       <ul
         class="auto-rows-min gap-y-3 grid msm:grid-cols-1 items-center list-none m-0 max-w-full p-0 sm:auto-cols-min sm:gap-x-2 sm:grid-rows-1 xxs:gap-x-3"

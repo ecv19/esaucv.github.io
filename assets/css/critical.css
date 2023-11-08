@@ -1,14 +1,20 @@
 :root {
-  --background: #212121;
-  --foreground: #f4f4f4;
-  --meta: #888888;
+  --background: #ffffff;
+  --foreground: #ffffff;
+  --meta: #57c8f1;
   --meta-light: rgba(144, 144, 144, 0.15);
   --primary: #57c8f1;
   --clear: rgba(0, 0, 0, 0.5);
-  --selection: #eaf0fe;
+  --selection: #000000;
   --duration: 250ms;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
+  --special-text:#ffffff;
 }
+
+.text-blue {
+  color: #f7f7f7; /* Your theme color or any other color you want */
+}
+
 
 ::-moz-selection {
   background-color: var(--meta);
@@ -33,7 +39,7 @@ html {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--selection);
   font-family: Roboto, sans-serif;
   margin: 0;
   overflow-x: hidden;

@@ -6,8 +6,7 @@ projects:
     img: ca.png
 
 papers:
-  - name: "Rey, S. J., & Casimiro Vieyra, E. (2023). Spatial inequality and place mobility in Mexico: 2000–2015. Applied Geography, 152, 102871. 
-  https://doi.org/10.1016/j.apgeog.2023.102871"
+  - name: "Rey, S. J., & Casimiro Vieyra, E. (2023). Spatial inequality and place mobility in Mexico: 2000–2015. Applied Geography, 152, 102871."
     description: Rey, S.J., Casimiro Vieyra, Esaú
     sources: 
     - type: url
@@ -19,17 +18,14 @@ papers:
     description: Deniz-Zaragoza, Mirella, Casimiro Vieyra, Esaú, Ayón, Cecilia
     sources:
   - name: State of Nonprofits in the Inland Empire. Center for Social Innovation, University of California, Riverside (ed.) State of the Inland Empire Series. 2020.
-    description: Casimiro Vieyra, Esaú, with others.
     sources:
       - type: url
         link: "https://socialinnovation.ucr.edu/state-nonprofits-inland-empire"
   - name: State of Civic Engagement in the Inland Empire. Center for Social Innovation, University of California, Riverside (ed.) State of the Inland Empire Series. 2019.
-    description: Casimiro Vieyra, Esaú, with others.
     sources:
       - type: url
         link: "https://socialinnovation.ucr.edu/state-civic-engagement-inland-empire"
   - name: State of Women in the Inland Empire. Center for Social Innovation, University of California, Riverside (ed.) State of the Inland Empire Series. 2019.
-    description: Casimiro Vieyra, Esaú, with others.
     sources:
       - type: url
         link: "https://socialinnovation.ucr.edu/state-women-inland-empire"

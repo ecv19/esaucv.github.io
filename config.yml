@@ -14,8 +14,7 @@ canonifyURLs: true
 params:
   description: "Ph.D. student in Geography at the University of California, Santa Barbara"
   author: "Esaú Casimiro-Vieyra"
-  meta:
-    theme: "#42a5f5"
+
 
 security:
   enableInlineShortcodes: false
