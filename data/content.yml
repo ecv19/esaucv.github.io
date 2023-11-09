@@ -1,12 +1,12 @@
 ---
 projects:
   - name: Sanctuary City Database
-    description: A sanctuary jurisdiction database of cities and counties in the State of California to examine sanctuary policies effects on health. Funded by the UC Mexico United States Institute. 
+    description: A sanctuary jurisdiction database of cities and counties in the State of California to examine sanctuary policies effects on health. 
     link: "https://github.com/ecv19?tab=repositories"
     img: ca.png
 
 papers:
-  - name: "Rey, S. J., & Casimiro Vieyra, E. (2023). Spatial inequality and place mobility in Mexico: 2000–2015. Applied Geography, 152, 102871."
+  - name: "Spatial inequality and place mobility in Mexico: 2000–2015. Applied Geography, 152, 102871. (2023)"
     description: Rey, S.J., Casimiro Vieyra, Esaú
     sources: 
     - type: url
@@ -14,7 +14,7 @@ papers:
   - name: Immigrants in California - A Study on Latinxs' Perception on Immigrant Integration. Under Review
     description: Casimiro Vieyra, Esaú, Deniz-Zaragoza, Mirella, Ayón, Cecilia
     sources: 
-  - name: Latinx Immigrant Health - Does immigrants’ perceptions of integration protect their health?. In progess
+  - name: Latinx Immigrant Health - Does immigrants’ perceptions of integration protect their health?. Under Review
     description: Deniz-Zaragoza, Mirella, Casimiro Vieyra, Esaú, Ayón, Cecilia
     sources:
   - name: State of Nonprofits in the Inland Empire. Center for Social Innovation, University of California, Riverside (ed.) State of the Inland Empire Series. 2020.
@@ -29,5 +29,9 @@ papers:
     sources:
       - type: url
         link: "https://socialinnovation.ucr.edu/state-women-inland-empire"
+      - type: pdf
+        link: "/pdfs/cv.pdf"
+      - type: report
+
 
 
