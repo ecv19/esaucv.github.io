@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="py-6 sm:py-10 w-full">
-  <h1 class="md:text-6xl mx-auto text-4xl text-center w-full">{{ .Title }}</h1>
+  <h3 class="md:text-6xl mx-auto text-4xl text-center w-full">{{ .Title }}</h3>
   <div class="w-full">{{ .Content }}</div>
   <div id="feed" class="grid mt-8 w-full">
     {{ range .Site.Data.content.papers }}
@@ -8,4 +8,5 @@
     {{ end }}
   </div>
 </section>
+
 {{ end }}

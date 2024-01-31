@@ -17,6 +17,11 @@ papers:
   - name: Latinx Immigrant Health - Does immigrants’ perceptions of integration protect their health?. Under Review
     description: Deniz-Zaragoza, Mirella, Casimiro Vieyra, Esaú, Ayón, Cecilia
     sources:
+  - name: "Sanctuary City Policies: A mechanism for reducing mental health inequalities faced by Latinxs? UCR School of Public Policy. 2023."
+    description: Nieri,T., Ayón, C., Ramachandran, M., Casimiro Vieyra, E., Bruckner, T., & Link, B.
+    sources:
+      - type: url
+        link: "https://drive.google.com/file/d/1FvegLf4rTsY_dbEv6mN-G9N7GklRp4eP/view"
   - name: State of Nonprofits in the Inland Empire. Center for Social Innovation, University of California, Riverside (ed.) State of the Inland Empire Series. 2020.
     sources:
       - type: url
@@ -29,9 +34,7 @@ papers:
     sources:
       - type: url
         link: "https://socialinnovation.ucr.edu/state-women-inland-empire"
-      - type: pdf
-        link: "/pdfs/cv.pdf"
-      - type: report
+
 
 
 
